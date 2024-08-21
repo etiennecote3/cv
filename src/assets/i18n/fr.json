@@ -1,0 +1,112 @@
+{
+  "NAME": "Étienne G. Côté",
+  "CONTACT": "Informations de contact",
+  "PHONE": "514-836-3464",
+  "EMAIL": "etienne.g.cote@outlook.com",
+  "LANGUAGES": "Langues",
+  "LANGUAGES_LIST": "français, anglais",
+  "EDUCATION": "Formation",
+  "EDUCATION_DETAILS": [
+    {
+      "DEGREE": "Baccalauréat en génie logiciel",
+      "YEAR": "2024",
+      "INSTITUTE": "École de technologie supérieure, Montréal"
+    },
+    {
+      "DEGREE": "Diplôme d’études collégiales en Techniques de l’informatique",
+      "YEAR": "2020",
+      "INSTITUTE": "Cégep du Vieux Montréal, Montréal"
+    }
+  ],
+  "EXPERIENCE": "Expérience professionnelle",
+  "EXPERIENCE_DETAILS": [
+    {
+      "TITLE": "Développeur logiciel DevSecOps",
+      "PERIOD": "Été 2023",
+      "COMPANY": "Stingray Digital, Montréal (stage 3)",
+      "TASKS": [
+        "Développement d'un outil de centralisation de télémétrie en Python pour la sécurité. Données provenant d’outils comme SonarQube, AlienVault.",
+        "Création d'un outil Python utilisant l'API OpenAI pour automatiser les réponses aux alertes de sécurité et générer des billets Jira.",
+        "Intégration de Terraform à la plateforme de sécurité Zscaler."
+      ]
+    },
+    {
+      "TITLE": "Développeur logiciel technologies .NET",
+      "PERIOD": "Été 2022",
+      "COMPANY": "Logient, Montréal (stage 2)",
+      "TASKS": [
+        "Conception et développement du nouveau site de l’ABC avec Kentico et .NET Core.",
+        "Développement de la nouvelle plateforme de paiement de factures de l’ABC avec .NET Core et Vue.js."
+      ]
+    },
+    {
+      "TITLE": "Développeur logiciel Java",
+      "PERIOD": "2021",
+      "COMPANY": "Stingray Digital, Montréal (stage 1 et temps partiel)",
+      "TASKS": [
+        "Conception et développement d’un nouveau microservice pour livrer les assets directement chez le client avec le cadriciel Spring.",
+        "Développement, maintenance et amélioration du système actuel de livraison."
+      ]
+    },
+    {
+      "TITLE": "Auxiliaire d'enseignement en laboratoire",
+      "PERIOD": "2023",
+      "COMPANY": "École de technologie supérieure, Montréal",
+      "TASKS": [
+        "Aide à l'enseignement du cours INF111 - Programmation orientée-objet."
+      ]
+    }
+  ],
+  "INVOLVEMENTS": "Implications",
+  "INVOLVEMENTS_DETAILS": [
+    {
+      "TITLE": "Technicien événementiel avec le club étudiant Lan ETS",
+      "PERIOD": "Mai 2024",
+      "EVENT": "Dreamhack, Dallas",
+      "TASKS": [
+        "Montage et démontage du centre de convention en vue d'un événement compétitif de jeux vidéo.",
+        "Gestion de personnel."
+      ]
+    },
+    {
+      "TITLE": "Exécutif au comité organisateur",
+      "PERIOD": "2023-2024",
+      "EVENT": "Lan ETS, Montréal",
+      "TASKS": [
+        "Gestion de personnel."
+      ]
+    }
+  ],
+  "AWARDS": "Distinctions",
+  "AWARDS_DETAILS": [
+    {
+      "AWARD": "Bourse d’excellence",
+      "YEAR": "2021",
+      "DESCRIPTION": "Bourse offerte par le gouvernement du Québec dans le cadre du programme de bourse d’excellence en génie informatique."
+    }
+  ],
+  "PROJECTS": "Projets",
+  "PROJECTS_DETAILS": [
+    {
+      "TITLE": "Jumeau numérique pour les bâtiments intelligents",
+      "YEAR": "2024",
+      "COMPANY": "GRIDD",
+      "DESCRIPTION": "Conception de l'architecture globale intégrant caméras, NVIDIA Jetson, AWS Lambda, API Gateway et MongoDB Atlas. Intégration des actions GameCI pour Unity, automatisant la configuration, les tests, et la génération de builds WebGL déployés sur AWS S3."
+    },
+    {
+      "TITLE": "Serveur Unraid",
+      "YEAR": "2023",
+      "DESCRIPTION": "Configuration et gestion d'un Reverse Proxy, Pi-hole, Plex (automatisé) pour le streaming multimédia, et serveur de jeux vidéo."
+    }
+  ],
+  "TECHNICAL_SKILLS": "Connaissances Techniques",
+  "TECHNICAL_SKILLS_LIST": [
+    "Méthode agile, Conception d’applications, CI/CD, Infrastructure as Code (IaC), Approche DevOps, Architecture de microservices"
+  ],
+  "IT_SKILLS": "Connaissances Informatiques",
+  "IT_SKILLS_LIST": [
+    "Langages de programmation : Java, Python, JavaScript, C#, C++, SQL (Oracle, MySQL), NoSQL (Neo4J, MongoDB)",
+    "Cadriciels et outils : Spring, ASP.NET, Entity, Vue.js, React, Angular",
+    "Logiciels et autres : Docker, Terraform, AWS, GitHub Actions, Grafana, SonarQube"
+  ]
+}

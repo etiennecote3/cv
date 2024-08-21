@@ -1,0 +1,17 @@
+.language-switcher {
+  text-align: right;
+  margin: 10px;
+}
+
+.language-switcher button {
+  background-color: #007BFF;
+  color: #FFFFFF;
+  margin-left: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.language-switcher button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}

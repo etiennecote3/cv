@@ -1,0 +1,112 @@
+{
+  "NAME": "Étienne G. Côté",
+  "CONTACT": "Contact Information",
+  "PHONE": "514-836-3464",
+  "EMAIL": "etienne.g.cote@outlook.com",
+  "LANGUAGES": "Languages",
+  "LANGUAGES_LIST": "French, English",
+  "EDUCATION": "Education",
+  "EDUCATION_DETAILS": [
+    {
+      "DEGREE": "Bachelor of Software Engineering",
+      "YEAR": "2024",
+      "INSTITUTE": "École de technologie supérieure, Montreal"
+    },
+    {
+      "DEGREE": "Diploma of Collegial Studies in Computer Science",
+      "YEAR": "2020",
+      "INSTITUTE": "Cégep du Vieux Montréal, Montreal"
+    }
+  ],
+  "EXPERIENCE": "Professional Experience",
+  "EXPERIENCE_DETAILS": [
+    {
+      "TITLE": "DevSecOps Software Developer",
+      "PERIOD": "Summer 2023",
+      "COMPANY": "Stingray Digital, Montreal (Internship 3)",
+      "TASKS": [
+        "Developed a telemetry centralization tool in Python for security, gathering data from tools like SonarQube and AlienVault.",
+        "Created a Python tool using the OpenAI API to automate security alert responses and generate Jira tickets.",
+        "Integrated Terraform with the Zscaler security platform."
+      ]
+    },
+    {
+      "TITLE": ".NET Technologies Software Developer",
+      "PERIOD": "Summer 2022",
+      "COMPANY": "Logient, Montreal (Internship 2)",
+      "TASKS": [
+        "Designed and developed the new website for the Canadian Bar Association with Kentico and .NET Core.",
+        "Developed the new invoice payment platform for the Canadian Bar Association using .NET Core and Vue.js."
+      ]
+    },
+    {
+      "TITLE": "Java Software Developer",
+      "PERIOD": "2021",
+      "COMPANY": "Stingray Digital, Montreal (Internship 1 and part-time)",
+      "TASKS": [
+        "Designed and developed a new microservice to deliver assets directly to the client using the Spring framework.",
+        "Developed, maintained, and improved the current delivery system."
+      ]
+    },
+    {
+      "TITLE": "Laboratory Teaching Assistant",
+      "PERIOD": "2023",
+      "COMPANY": "École de technologie supérieure, Montreal",
+      "TASKS": [
+        "Assisted in teaching the INF111 - Object-Oriented Programming course."
+      ]
+    }
+  ],
+  "INVOLVEMENTS": "Involvements",
+  "INVOLVEMENTS_DETAILS": [
+    {
+      "TITLE": "Event Technician with Lan ETS Student Club",
+      "PERIOD": "May 2024",
+      "EVENT": "Dreamhack, Dallas",
+      "TASKS": [
+        "Set up and teardown of the convention center for a competitive video gaming event.",
+        "Personnel management."
+      ]
+    },
+    {
+      "TITLE": "Executive on the Organizing Committee",
+      "PERIOD": "2023-2024",
+      "EVENT": "Lan ETS, Montreal",
+      "TASKS": [
+        "Personnel management."
+      ]
+    }
+  ],
+  "AWARDS": "Awards",
+  "AWARDS_DETAILS": [
+    {
+      "AWARD": "Excellence Scholarship",
+      "YEAR": "2021",
+      "DESCRIPTION": "Scholarship awarded by the Government of Quebec as part of the Excellence Scholarship Program in Computer Engineering."
+    }
+  ],
+  "PROJECTS": "Projects",
+  "PROJECTS_DETAILS": [
+    {
+      "TITLE": "Digital Twin for Smart Buildings",
+      "YEAR": "2024",
+      "COMPANY": "GRIDD",
+      "DESCRIPTION": "Designed the overall architecture integrating cameras, NVIDIA Jetson, AWS Lambda, API Gateway, and MongoDB Atlas. Integrated GameCI actions for Unity, automating configuration, testing, and generation of WebGL builds deployed on AWS S3."
+    },
+    {
+      "TITLE": "Unraid Server",
+      "YEAR": "2023",
+      "DESCRIPTION": "Configured and managed a Reverse Proxy, Pi-hole, Plex (automated) for multimedia streaming, and a video game server."
+    }
+  ],
+  "TECHNICAL_SKILLS": "Technical Knowledge",
+  "TECHNICAL_SKILLS_LIST": [
+    "Agile methodology, Application design, CI/CD, Infrastructure as Code (IaC), DevOps approach, Microservices architecture"
+  ],
+  "IT_SKILLS": "IT Knowledge",
+  "IT_SKILLS_LIST": [
+    "Programming Languages: Java, Python, JavaScript, C#, C++, SQL (Oracle, MySQL), NoSQL (Neo4J, MongoDB)",
+    "Frameworks and Tools: Spring, ASP.NET, Entity, Vue.js, React, Angular",
+    "Software and Others: Docker, Terraform, AWS, GitHub Actions, Grafana, SonarQube"
+  ]
+}

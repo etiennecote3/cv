@@ -1,0 +1,36 @@
+.header {
+  background-color: #343A40; /* Dark grey background */
+  color: #FFFFFF; /* White text */
+  padding: 30px 0;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+.header p {
+  margin: 5px 0;
+  font-size: 1.2em;
+}
+
+/* Language switcher inside the header */
+.language-switcher {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.language-switcher button {
+  background-color: #007BFF;
+  color: #FFFFFF;
+  margin-left: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.language-switcher button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}

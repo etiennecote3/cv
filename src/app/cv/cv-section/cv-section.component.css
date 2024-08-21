@@ -1,0 +1,29 @@
+.cv-container {
+  background-color: #FFFFFF; /* White background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Section titles */
+.cv-container h2 {
+  color: #007BFF; /* Blue for section titles */
+  border-bottom: 2px solid #E9ECEF; /* Light grey bottom border */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 1.75em;
+}
+
+/* Lists */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  color: #343A40; /* Dark grey text color */
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}

@@ -1,1 +1,96 @@
-/* You can add global styles to this file, and also import other style files */
+/* Import the Lato font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  background-color: #F8F9FA; /* Light grey background */
+  color: #343A40; /* Dark grey text color */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Links */
+a {
+  color: #007BFF; /* Professional blue for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  background-color: #007BFF; /* Professional blue for buttons */
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1em;
+  font-weight: 700;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Utility classes */
+
+/* Flexbox centering utility */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Margin and Padding utilities */
+.m-0 { margin: 0 !important; }
+.mt-1 { margin-top: 10px !important; }
+.mb-1 { margin-bottom: 10px !important; }
+.mt-2 { margin-top: 20px !important; }
+.mb-2 { margin-bottom: 20px !important; }
+.p-1 { padding: 10px !important; }
+.p-2 { padding: 20px !important; }
+
+/* Text utilities */
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* General container styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Adding a subtle hover effect on container */
+.cv-container:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+}
