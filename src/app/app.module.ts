@@ -19,7 +19,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeaderComponent,
     FooterComponent,
     CvSectionComponent,
-    LanguageSwitcherComponent
+    LanguageSwitcherComponent,
   ],
   imports: [
     BrowserModule,

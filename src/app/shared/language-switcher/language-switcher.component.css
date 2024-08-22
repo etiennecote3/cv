@@ -1,17 +1,32 @@
 .language-switcher {
-  text-align: right;
-  margin: 10px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
 }
 
 .language-switcher button {
-  background-color: #007BFF;
-  color: #FFFFFF;
-  margin-left: 5px;
+  background-color: #007BFF; /* Original blue color */
+  color: #FFFFFF; /* White text */
+  margin-left: 10px; /* Increased spacing between buttons */
   font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  padding: 10px 20px; /* Increased padding for a larger button */
+  border: none;
+  border-radius: 25px; /* Fully rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .language-switcher button:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.language-switcher button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Add a focus ring with a softer blue color */
+}
+
+.language-switcher button:active {
+  transform: translateY(1px); /* Slight press-down effect on click */
 }

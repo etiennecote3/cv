@@ -101,12 +101,39 @@
   ],
   "TECHNICAL_SKILLS": "Technical Knowledge",
   "TECHNICAL_SKILLS_LIST": [
-    "Agile methodology, Application design, CI/CD, Infrastructure as Code (IaC), DevOps approach, Microservices architecture"
+    "Agile methodology",
+    "Application design",
+    "CI/CD",
+    "Infrastructure as Code (IaC)",
+    "DevOps approach",
+    "Microservices architecture"
   ],
-  "IT_SKILLS": "IT Knowledge",
-  "IT_SKILLS_LIST": [
-    "Programming Languages: Java, Python, JavaScript, C#, C++, SQL (Oracle, MySQL), NoSQL (Neo4J, MongoDB)",
-    "Frameworks and Tools: Spring, ASP.NET, Entity, Vue.js, React, Angular",
-    "Software and Others: Docker, Terraform, AWS, GitHub Actions, Grafana, SonarQube"
+  "PROGRAMMING_LANGUAGES": "Programming Languages",
+  "PROGRAMMING_LANGUAGES_LIST": [
+    "Java",
+    "Python",
+    "avaScript",
+    "C#",
+    "C++",
+    "SQL (Oracle, MySQL)",
+    "NoSQL (Neo4J, MongoDB)"
+  ],
+  "FRAMEWORKS_TOOLS": "Frameworks and Tools",
+  "FRAMEWORKS_TOOLS_LIST": [
+    "Spring",
+    "ASP.NET",
+    "Entity",
+    "Vue.js",
+    "React",
+    "Angular"
+  ],
+  "SOFTWARE_OTHERS": "Software and Others",
+  "SOFTWARE_OTHERS_LIST": [
+    "Docker",
+    "Terraform",
+    "AWS",
+    "GitHub Actions",
+    "Grafana",
+    "SonarQube"
   ]
 }
