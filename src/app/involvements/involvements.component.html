@@ -1,0 +1,8 @@
+<div *ngFor="let involvement of resumeData?.INVOLVEMENTS_DETAILS" class="involvements-entry">
+  <h4 class="involvements-title">{{ involvement.TITLE }}</h4>
+  <div class="involvements-description">
+    <ul>
+      <li *ngFor="let detail of involvement.TASKS">{{ detail }}</li>
+    </ul>
+  </div>
+</div>

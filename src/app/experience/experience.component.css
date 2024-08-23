@@ -1,0 +1,30 @@
+.experience-title {
+  font-size: 1.5rem; /* Increase the font size of the titles */
+  font-weight: bold; /* Make titles bold */
+  color: var(--primary-color); /* Use the primary color to highlight titles */
+  margin-bottom: 10px; /* Add some space below the title */
+}
+
+.experience-company {
+  font-size: 1.2rem; /* Slightly larger font size for companies */
+  font-weight: 500; /* Use medium weight for company names */
+  color: var(--text-color); /* Ensure readability */
+  margin-bottom: 8px; /* Add space below the company name */
+}
+
+.experience-description {
+  font-size: 1rem; /* Standard font size for descriptions */
+  color: var(--text-color); /* Text color to match the theme */
+  margin-bottom: 15px; /* Space out the descriptions for better readability */
+}
+
+.experience-description ul li {
+  margin-bottom: 8px; /* Space between list items */
+}
+
+.experience-description ul li::before {
+  content: '•';
+  margin-right: 10px;
+  color: var(--primary-color); /* Highlight bullet points */
+  font-weight: bold;
+}

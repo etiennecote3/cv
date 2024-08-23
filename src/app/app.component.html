@@ -1,92 +1,23 @@
-<app-header (languageChanged)="onLanguageChanged($event)"></app-header>
+<main class="container mt-5">
+  <section id="hero-section" class="mb-5">
+    <app-hero></app-hero>
+  </section>
 
-<main class="container">
-  <div class="row">
-    <!-- Left Column -->
-    <div class="column left-column">
-      <!-- Education Section -->
-      <section class="cv-section">
-        <app-cv-section [title]="resumeData?.EDUCATION">
-          <div *ngFor="let edu of resumeData?.EDUCATION_DETAILS">
-            <p><strong>{{ edu.DEGREE }}</strong> ({{ edu.YEAR }}) - {{ edu.INSTITUTE }}</p>
-          </div>
-        </app-cv-section>
-      </section>
+  <section id="profile-section" class="mb-5">
+    <app-profile [resumeData]="resumeData"></app-profile>
+  </section>
 
-      <!-- Technical Skills Section -->
-      <section class="cv-section">
-        <app-cv-section [title]="resumeData?.TECHNICAL_SKILLS">
-          <ul>
-            <li *ngFor="let skill of resumeData?.TECHNICAL_SKILLS_LIST">{{ skill }}</li>
-          </ul>
-        </app-cv-section>
-      </section>
+  <section id="experience-section" class="mb-5">
+    <app-experience [resumeData]="resumeData"></app-experience>
+  </section>
 
-      <!-- Programming Languages Section -->
-      <section class="cv-section">
-        <app-cv-section [title]="resumeData?.PROGRAMMING_LANGUAGES">
-          <ul>
-            <li *ngFor="let language of resumeData?.PROGRAMMING_LANGUAGES_LIST">{{ language }}</li>
-          </ul>
-        </app-cv-section>
-      </section>
+  <section id="projects-section" class="mb-5">
+    <app-projects [resumeData]="resumeData"></app-projects>
+  </section>
 
-      <!-- Frameworks and Tools Section -->
-      <section class="cv-section">
-        <app-cv-section [title]="resumeData?.FRAMEWORKS_TOOLS">
-          <ul>
-            <li *ngFor="let tool of resumeData?.FRAMEWORKS_TOOLS_LIST">{{ tool }}</li>
-          </ul>
-        </app-cv-section>
-      </section>
-
-      <!-- Software and Others Section -->
-      <section class="cv-section">
-        <app-cv-section [title]="resumeData?.SOFTWARE_OTHERS">
-          <ul>
-            <li *ngFor="let software of resumeData?.SOFTWARE_OTHERS_LIST">{{ software }}</li>
-          </ul>
-        </app-cv-section>
-      </section>
-    </div>
-
-    <!-- Right Column -->
-    <div class="column right-column">
-      <!-- Experience Section -->
-      <section class="cv-section">
-        <app-cv-section [title]="resumeData?.EXPERIENCE">
-          <div *ngFor="let exp of resumeData?.EXPERIENCE_DETAILS">
-            <p><strong>{{ exp.TITLE }}</strong> ({{ exp.PERIOD }}) - {{ exp.COMPANY }}</p>
-            <ul>
-              <li *ngFor="let task of exp.TASKS">{{ task }}</li>
-            </ul>
-          </div>
-        </app-cv-section>
-      </section>
-
-      <!-- Projects Section -->
-      <section class="cv-section">
-        <app-cv-section [title]="resumeData?.PROJECTS">
-          <div *ngFor="let project of resumeData?.PROJECTS_DETAILS">
-            <p><strong>{{ project.TITLE }}</strong> ({{ project.YEAR }})</p>
-            <p>{{ project.DESCRIPTION }}</p>
-          </div>
-        </app-cv-section>
-      </section>
-
-      <!-- Involvements Section -->
-      <section class="cv-section">
-        <app-cv-section [title]="resumeData?.INVOLVEMENTS">
-          <div *ngFor="let involvement of resumeData?.INVOLVEMENTS_DETAILS">
-            <p><strong>{{ involvement.TITLE }}</strong> ({{ involvement.PERIOD }}) - {{ involvement.EVENT }}</p>
-            <ul>
-              <li *ngFor="let task of involvement.TASKS">{{ task }}</li>
-            </ul>
-          </div>
-        </app-cv-section>
-      </section>
-    </div>
-  </div>
+  <section id="involvements-section" class="mb-5">
+    <app-involvements [resumeData]="resumeData"></app-involvements>
+  </section>
 </main>
 
-<app-footer></app-footer>
+<app-footer class="mt-5"></app-footer>

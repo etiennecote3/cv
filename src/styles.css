@@ -1,96 +1,119 @@
-/* Import the Lato font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-
-/* Global Styles */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+:root {
+  --primary-color: #64ffda;
+  --secondary-color: #0a192f;
+  --text-color: #8892b0;
+  --background-color: #020c1b;
+  --accent-color: #233554;
 }
 
 body {
-  font-family: 'Lato', Arial, sans-serif;
-  background-color: #F8F9FA; /* Light grey background */
-  color: #343A40; /* Dark grey text color */
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
-/* Links */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
+
 a {
-  color: #007BFF; /* Professional blue for links */
-  text-decoration: none;
-  transition: color 0.3s ease;
+  color: var(--primary-color);
 }
 
 a:hover {
-  color: #0056b3; /* Darker blue on hover */
-  text-decoration: underline;
+  color: var(--accent-color);
 }
 
-/* Buttons */
-button {
-  background-color: #007BFF; /* Professional blue for buttons */
-  color: #FFFFFF;
-  border-radius: 5px;
-  padding: 10px 15px;
-  font-size: 1em;
-  font-weight: 700;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  border: none;
-  cursor: pointer;
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
 }
 
-button:hover {
-  background-color: #0056b3;
-  transform: translateY(-2px);
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-button:active {
-  transform: translateY(0);
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideInLeft 0.8s ease-out forwards;
 }
 
-/* Utility classes */
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-/* Flexbox centering utility */
-.flex-center {
+section {
+  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-/* Margin and Padding utilities */
-.m-0 { margin: 0 !important; }
-.mt-1 { margin-top: 10px !important; }
-.mb-1 { margin-bottom: 10px !important; }
-.mt-2 { margin-top: 20px !important; }
-.mb-2 { margin-bottom: 20px !important; }
-.p-1 { padding: 10px !important; }
-.p-2 { padding: 20px !important; }
-
-/* Text utilities */
-.text-center {
+  justify-content: center;
   text-align: center;
+  padding: 0 20px;
 }
 
-.text-uppercase {
-  text-transform: uppercase;
+#hero-section {
+  background-color: var(--background-color);
 }
 
-/* General container styling */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+#profile-section {
+  background-color: var(--accent-color);
 }
 
-/* Adding a subtle hover effect on container */
-.cv-container:hover {
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 0.3s ease;
+#experience-section {
+  background-color: var(--background-color);
 }
+
+#projects-section {
+  background-color: var(--accent-color);
+}
+
+#involvements-section {
+  background-color: var(--background-color);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.footer {
+  background-color: var(--background-color); /* Keep the background consistent */
+  color: var(--text-color); /* Use the text color variable */
+  padding: 20px 0;
+  text-align: center; /* Center the footer content */
+}
+
+.footer a {
+  color: var(--primary-color); /* Ensure the links match the primary color */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--accent-color); /* Change color on hover */
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+  filter: invert(1); /* Invert color to make it visible on dark background */
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+

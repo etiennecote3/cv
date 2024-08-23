@@ -1,0 +1,9 @@
+<div *ngFor="let exp of resumeData?.EXPERIENCE_DETAILS" class="experience-entry">
+  <h4 class="experience-title">{{ exp.TITLE }}</h4>
+  <p class="experience-company">{{ exp.COMPANY }} | {{ exp.PERIOD }}</p>
+  <div class="experience-description">
+    <ul>
+      <li *ngFor="let task of exp.TASKS">{{ task }}</li>
+    </ul>
+  </div>
+</div>
