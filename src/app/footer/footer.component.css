@@ -1,0 +1,32 @@
+footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--accent-color);
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+  filter: invert(1);
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.social-icons a {
+  margin: 0 10px;
+}

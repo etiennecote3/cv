@@ -1,0 +1,12 @@
+.profile-pic {
+  width: 150px; /* Set a fixed width for the image */
+  height: 150px; /* Ensure the height matches the width for a perfect circle */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the entire area without distortion */
+  margin-bottom: 20px; /* Add space between the image and the text below */
+  border: 3px solid var(--primary-color); /* Optional: Add a border that matches your theme */
+}
+
+.hero-content {
+  text-align: center;
+}

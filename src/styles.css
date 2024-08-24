@@ -6,9 +6,69 @@
   --accent-color: #233554;
 }
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+}
+
+main {
+  width: 100%;
+  flex: 1 0 auto;
+}
+
+section {
+  scroll-snap-align: start;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#hero-section {
+  background-color: var(--background-color);
+}
+
+#profile-section {
+  background-color: var(--accent-color);
+}
+
+#experience-section {
+  background-color: var(--background-color);
+}
+
+#projects-section {
+  background-color: var(--accent-color);
+}
+
+#involvements-section {
+  background-color: var(--background-color);
+  justify-content: space-between;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,71 +109,36 @@ a:hover {
   }
 }
 
-section {
-  height: 100vh;
+ul, ol {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  list-style-type: none;
+}
+
+.scroll-indicator {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 20px;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
 }
 
-#hero-section {
-  background-color: var(--background-color);
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-#profile-section {
-  background-color: var(--accent-color);
+.dot.active {
+  background-color: var(--primary-color);
 }
 
-#experience-section {
-  background-color: var(--background-color);
+.dot:hover {
+  background-color: var(--primary-color);
 }
-
-#projects-section {
-  background-color: var(--accent-color);
-}
-
-#involvements-section {
-  background-color: var(--background-color);
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.footer {
-  background-color: var(--background-color); /* Keep the background consistent */
-  color: var(--text-color); /* Use the text color variable */
-  padding: 20px 0;
-  text-align: center; /* Center the footer content */
-}
-
-.footer a {
-  color: var(--primary-color); /* Ensure the links match the primary color */
-  text-decoration: none;
-}
-
-.footer a:hover {
-  color: var(--accent-color); /* Change color on hover */
-}
-
-.social-icons img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s ease;
-  filter: invert(1); /* Invert color to make it visible on dark background */
-}
-
-.social-icons img:hover {
-  transform: scale(1.1);
-}
-
-.social-icons a {
-  margin: 0 10px;
-}
-

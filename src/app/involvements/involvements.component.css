@@ -1,23 +1,22 @@
 .involvements-title {
-  font-size: 1.5rem; /* Increase the font size of the involvement titles */
-  font-weight: bold; /* Make titles bold */
-  color: var(--primary-color); /* Use the primary color to highlight titles */
-  margin-bottom: 10px; /* Add space below the title */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 10px;
 }
 
 .involvements-description {
-  font-size: 1rem; /* Standard font size for involvement descriptions */
-  color: var(--text-color); /* Text color to match the theme */
-  margin-bottom: 15px; /* Space out the descriptions for better readability */
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 15px;
 }
 
 .involvements-description ul li {
-  margin-bottom: 8px; /* Space between list items */
+  margin-bottom: 8px;
 }
 
 .involvements-description ul li::before {
-  content: '•';
   margin-right: 10px;
-  color: var(--primary-color); /* Highlight bullet points */
+  color: var(--primary-color);
   font-weight: bold;
 }

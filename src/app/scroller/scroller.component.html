@@ -1,0 +1,8 @@
+<div class="scroller">
+  <div
+    class="dot"
+    *ngFor="let section of sections"
+    [class.active]="section === currentSection"
+    (click)="scrollToSection(section)"
+  ></div>
+</div>

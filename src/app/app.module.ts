@@ -12,6 +12,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { InvolvementsComponent } from './involvements/involvements.component';
 import { HeroComponent } from './hero/hero.component';
+import { ScrollerComponent } from './scroller/scroller.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -28,6 +29,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ProjectsComponent,
     InvolvementsComponent,
     HeroComponent,
+    ScrollerComponent,
   ],
   imports: [
     BrowserModule,

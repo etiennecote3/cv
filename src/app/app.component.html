@@ -1,23 +1,26 @@
-<main class="container mt-5">
-  <section id="hero-section" class="mb-5">
+<app-scroller></app-scroller>
+
+<main>
+  <section id="hero-section">
     <app-hero></app-hero>
   </section>
 
-  <section id="profile-section" class="mb-5">
+  <section id="profile-section">
     <app-profile [resumeData]="resumeData"></app-profile>
   </section>
 
-  <section id="experience-section" class="mb-5">
+  <section id="experience-section">
     <app-experience [resumeData]="resumeData"></app-experience>
   </section>
 
-  <section id="projects-section" class="mb-5">
+  <section id="projects-section">
     <app-projects [resumeData]="resumeData"></app-projects>
   </section>
 
-  <section id="involvements-section" class="mb-5">
-    <app-involvements [resumeData]="resumeData"></app-involvements>
+  <section id="involvements-section">
+    <div class="content-wrapper">
+      <app-involvements [resumeData]="resumeData"></app-involvements>
+    </div>
+    <app-footer></app-footer>
   </section>
 </main>
-
-<app-footer class="mt-5"></app-footer>
