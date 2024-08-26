@@ -16,21 +16,15 @@ export class ScrollerComponent {
   currentSection = this.sections[0];
 
   ngOnInit(): void {
-    console.log('ScrollIndicatorComponent initialized');
   }
 
-  ngAfterViewInit(): void {
-    console.log('ScrollIndicatorComponent view initialized');
-  }
-
-  @HostListener('document:scroll', ['$event'])
-  onScroll(event: Event): void {
-    console.log('Scroll event detected:', event);
+  @HostListener('window:scroll', ['$event'])
+  onScroll(): void {
     this.updateCurrentSection();
   }
 
   updateCurrentSection(): void {
-    let current = this.sections[0]; // Default to the first section
+    let current = this.sections[0];
 
     for (let i = 0; i < this.sections.length; i++) {
       const sectionElement = document.getElementById(this.sections[i]);
@@ -44,15 +38,12 @@ export class ScrollerComponent {
     }
 
     this.currentSection = current;
-    console.log(this.currentSection); // Check which section is currently active
   }
 
   scrollToSection(section: string): void {
     const sectionElement = document.getElementById(section);
     if (sectionElement) {
-      sectionElement.scrollIntoView({ behavior: 'smooth' });
-
-      // Update the current section immediately after the scroll
+      sectionElement.scrollIntoView({behavior: 'smooth'});
       this.currentSection = section;
     }
   }

@@ -29,7 +29,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ProjectsComponent,
     InvolvementsComponent,
     HeroComponent,
-    ScrollerComponent,
+    ScrollerComponent
   ],
   imports: [
     BrowserModule,

@@ -15,13 +15,11 @@
 html, body {
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
   scroll-snap-type: y mandatory;
-  overflow-y: auto;
 }
 
 main {
@@ -113,32 +111,4 @@ ul, ol {
   padding-left: 0 !important;
   margin-left: 0 !important;
   list-style-type: none;
-}
-
-.scroll-indicator {
-  position: fixed;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  z-index: 1000;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--text-color);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.dot.active {
-  background-color: var(--primary-color);
-}
-
-.dot:hover {
-  background-color: var(--primary-color);
 }

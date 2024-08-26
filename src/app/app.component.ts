@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { DataService } from './services/data.service';
 
 @Component({
@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   constructor(private dataService: DataService) {}
 
   ngOnInit() {
-    this.loadResumeData('fr'); // Default language is French
+    this.loadResumeData('fr');
   }
 
   onLanguageChanged(lang: string) {

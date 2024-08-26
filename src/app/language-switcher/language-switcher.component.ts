@@ -27,6 +27,6 @@ export class LanguageSwitcherComponent {
 
   private setLanguage(lang: string) {
     this.translate.use(lang);
-    this.languageChanged.emit(lang); // Emit the event to notify the parent component
+    this.languageChanged.emit(lang);
   }
 }
